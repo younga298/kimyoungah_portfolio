@@ -1,0 +1,344 @@
+@media screen and (max-width :1200px) {
+
+  .logo-black {
+    display: block;
+  }
+
+  .logo-white {
+    display: none;
+  }
+
+  .sideborder {
+    background: #fff;
+    height: 60px;
+  }
+
+  .main p {
+    display: none;
+  }
+
+  ;
+
+
+  .btn-position {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbtn {
+
+    top: 36px;
+    left: auto;
+    right: 5px;
+
+    div {
+      background: #333;
+    }
+  }
+
+
+
+
+  .cricle {
+    width: 90%;
+    height: 88%;
+    font-size: 15px;
+  }
+
+
+  .sqare-text {
+    left: 102px;
+    font-size: 17px;
+  }
+
+
+
+
+  .ourbrand-container {
+    height: 115vh;
+
+
+  }
+
+  .swiper-controller {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+  .img-box .circle {
+
+    p {
+      font-size: 13px;
+    }
+
+    .color-text {
+      font-size: 13px;
+    }
+
+  }
+
+
+
+  .samyang .gridcontainer {
+    width: 100%;
+  }
+
+
+  .information {
+    width: 515px;
+    padding: 7px 0 47px 0;
+    line-height: 22px;
+  }
+
+  .roundsquare {
+
+    .imagebox {
+      .wrap {
+        margin: 0 auto;
+      }
+    }
+
+    .img-box {
+      width: 100%;
+      height: 100%;
+      padding: 19px;
+    }
+  }
+
+  .roundnow-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .loading {
+    display: none;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0px 27px 70px 0px;
+
+    .textbold {
+      font-size: 14px;
+    }
+
+    .d {
+      font-size: 14px;
+      height: 33px;
+    }
+  }
+
+  .newstext .texthidden {
+    height: 20px;
+  }
+
+  .samyang {
+    display: flex;
+    flex-direction: column;
+    height: 785px;
+    justify-content: space-around;
+  }
+
+  .adress-flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .logocontainer {
+    width: 100%;
+  }
+
+  .familysite {
+    margin-top: -92px;
+  }
+
+  footer {
+    padding: 38px;
+  }
+
+  footer .footer-line {
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width :790px) {
+  .roundsquare {
+    .imagebox {
+      flex-direction: column;
+      justify-content: center;
+
+      .img-box {
+        width: 642px;
+        height: 642px;
+      }
+    }
+
+  }
+
+
+  .brandimg-text .swiper {
+    width: 100%;
+  }
+
+  .fa-arrow-alt-circle-right:before,
+  .fa-arrow-alt-circle-left:before {
+    content: "";
+  }
+
+  .roundnow {
+    height: 1826px;
+  }
+
+  .roundnow-padding .squarenow {
+    left: 27px;
+    top: 103px;
+  }
+
+  .news {
+    width: 685px;
+    right: 0;
+    top: 12%;
+
+    .container {
+      padding: 12px 26px;
+      width: 100%;
+      height: 395px;
+
+      .textbold {
+        height: 20px;
+        margin-bottom: 28px;
+      }
+
+      .d {
+        width: 500px;
+      }
+
+      .textborder {
+        font-size: 16px;
+        color: #ff6400;
+      }
+    }
+
+    .newstext {
+      P {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .sqare-text {
+    left: 43px;
+  }
+
+  .iconscontainer {
+    .img-box {
+      width: calc(100vw / 2 - (17px / 2));
+      height: calc(100vw / 2 - (17px / 2));
+    }
+
+    svg {
+      width: 270px;
+      height: 70px;
+    }
+
+  }
+
+  .iconstext {
+    .color-text {
+      font-size: 10px;
+    }
+  }
+
+
+
+  .samyang {
+
+
+    .logocontainer {
+      width: 583px;
+
+      svg {
+        width: 241px;
+        height: 74px;
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+  footer {
+    width: 100%;
+    padding: 24px;
+    padding: 49px;
+
+    .information {
+      width: 318px;
+      padding: 7px 0 47px 0;
+      line-height: 22px;
+    }
+
+    .familysite {
+      padding: 12px 0px 12px 30px;
+      width: 168px;
+      margin-top: -16px;
+      font-size: 14px;
+    }
+
+    .gridcontainer {
+      margin-top: 58px;
+
+      .category>p {
+        font-size: 14px;
+      }
+    }
+
+
+
+    .gridtext {
+      width: 634px;
+
+      div {
+        width: 40%;
+        margin: 22px 53px 0 0;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:750px) {
+
+  .brandimg {
+    display: none;
+  }
+
+  .ourbrand-container .brandimg-text {
+    width: 100%;
+  }
+}
+
+.swiper-slide .img-wrap {
+  height: 328px;
+}
+
+.brand .text-box {
+  margin-left: 43px;
+}

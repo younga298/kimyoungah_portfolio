@@ -1,0 +1,113 @@
+.brandimg-text .swiper {
+  position: absolute;
+  width: 441px;
+  height: 70%;
+  padding: 0 40px;
+  top: 38px;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.swiper-slide .img-wrap {
+  width: 100%;
+  height: 328px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.swiper-slide .text-wrap {
+  width: 100%;
+}
+
+.swiper-slide .text-wrap .title {
+  margin-bottom: 12px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 390px;
+}
+
+
+.readmore {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 62px;
+}
+
+
+.brandimg {
+
+  position: relative;
+  height: 100%;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-controller {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 300px;
+}
