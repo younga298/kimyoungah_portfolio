@@ -1,0 +1,19 @@
+@media screen and (max-width:750px) {
+
+
+  .brandimg {
+    display: none;
+  }
+
+  .ourbrand-container .brandimg-text {
+    width: 100%;
+  }
+}
+
+.swiper-slide .img-wrap {
+  height: 328px;
+}
+
+.brand .text-box {
+  margin-left: 43px;
+}

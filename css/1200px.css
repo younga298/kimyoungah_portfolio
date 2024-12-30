@@ -1,0 +1,156 @@
+@media screen and (max-width :1200px) {
+
+  .logo-black {
+    display: block;
+  }
+
+  .logo-white {
+    display: none;
+  }
+
+  .sideborder {
+    background: #fff;
+    height: 60px;
+  }
+
+  .main p {
+    display: none;
+  }
+
+  ;
+
+
+  .btn-position {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  .navbtn {
+
+    top: 36px;
+    left: auto;
+    right: 5px;
+
+    div {
+      background: #333;
+    }
+  }
+
+  .sub-menu-image {
+    display: none;
+  }
+
+
+
+
+  .sqare-text {
+    left: 102px;
+    font-size: 17px;
+  }
+
+
+
+
+  .ourbrand-container {
+    height: 115vh;
+
+
+  }
+
+  .swiper-controller {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+  .img-box .circle {
+
+    p {
+      font-size: 13px;
+    }
+
+    .color-text {
+      font-size: 13px;
+    }
+
+  }
+
+
+
+  .samyang .gridcontainer {
+    width: 100%;
+  }
+
+
+  .information {
+    width: 515px;
+    padding: 7px 0 47px 0;
+    line-height: 22px;
+  }
+
+
+
+  .roundnow-container {
+    flex-direction: column;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .roundnow-container .loading--hide {
+    display: none;
+  }
+
+  .container {
+    padding: 0px 27px 70px 0px;
+
+    .textbold {
+      font-size: 14px;
+    }
+
+    .d {
+      font-size: 14px;
+      height: 33px;
+    }
+  }
+
+  .newstext .texthidden {
+    height: 20px;
+  }
+
+  .samyang {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adress-flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .logocontainer {
+    width: 100%;
+  }
+
+  .familysite {
+    margin-top: -92px;
+  }
+
+  footer {
+    padding: 38px;
+  }
+
+  footer .footer-line {
+    width: 80%;
+  }
+}

@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-
+  height: 100%;
 
   .popup-line {
     border-bottom: 2px solid rgb(187, 182, 182);
@@ -24,8 +24,8 @@
 
 .popup-section {
   width: 100%;
-  height: 625px;
-
+  overflow-y: auto;
+  height: 100%;
 }
 
 nav {
@@ -50,9 +50,6 @@ nav .sub-menu li {
 }
 
 
-.three-depth {
-  margin-left: -53px;
-}
 
 nav .three-depth li {
   font-weight: 500;
@@ -84,18 +81,22 @@ nav .three-depth li:first-of-type {
     padding-top: 15px;
   }
 
-  li {
-    margin: 33px 51px -15px 52px;
-  }
 }
 
+.sub-menu-image {
+  flex: 1;
+}
+
+.sub-menu__group.active {
+  display: flex;
+}
 
 .sub-menu.active {
   display: flex;
 }
 
-.sub-menu>ul,
-.sub-menu>div {
+.sub-menu>ul {
+  padding: 50px 0px 0 230px;
   flex: 1;
 }
 
@@ -115,12 +116,11 @@ nav>ul>li>a {
   display: block;
 }
 
+nav>ul>li:hover {
+  border-bottom: 3px solid #b3b3b3;
+}
+
 .aa {
-  display: flex;
-  flex-wrap: wrap;
-
-
-
 
   .aa>li {
     flex: 1 1 calc(20% - 20px);

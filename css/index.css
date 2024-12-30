@@ -1,3 +1,7 @@
+.back-button {
+  display: none;
+}
+
 .main {
 
   position: fixed;
@@ -75,42 +79,40 @@
 .clip {
 
   width: 100%;
-  height: calc(100vh - 80px);
   overflow: hidden;
-
+  padding-top: 70px;
 }
 
 video {
   object-fit: cover;
 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
 }
 
 .roundsquare {
-
+  padding-top: 60px;
   background: #fdf8f5;
 
   width: 100%;
 
-  .text-box {
-    width: 100%;
-    padding-bottom: 85px;
-    padding-top: 80px;
-  }
 
   .imagebox {
     display: flex;
-    padding-top: 11px;
+    padding-top: 30px;
     justify-content: space-between;
+
+    .wrap {
+      margin: 20px;
+    }
   }
 
 
 }
 
+
+
 .text-image-container {
-  width: 80%;
-  margin: 0 auto;
+  padding: 50px;
 }
 
 .wrap {
@@ -143,14 +145,21 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 84%;
-  height: 90%;
   border-radius: 450px;
   background-color: #ff6400;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.round-square__circle {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   display: none;
 }
 
@@ -165,20 +174,11 @@ video {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.img-box.active .circle {
+.img-box .icons__circle {
   display: flex;
-}
-
-.img-box .circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   font-weight: 600;
-  gap: 25px;
-  flex-direction: column;
-  text-align: center;
   display: none;
 
   .color-text {
@@ -192,6 +192,12 @@ video {
     font-size: 29px;
   }
 }
+
+.img-box.active .circle {
+  display: flex;
+}
+
+
 
 .ourbrand-container {
   height: 112vh;
@@ -215,7 +221,7 @@ video {
 
 .brandimg-container {
   position: relative;
-  height: 90vh;
+  height: 88vh;
   display: flex;
   justify-content: center;
 }
@@ -259,12 +265,11 @@ video {
 }
 
 .roundnow {
-  height: 630px;
   background: #fdf8f5;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 140px;
   /* .textborder {
     border-top: 3.3px solid #f7decb;
     margin-top: 14px;
@@ -274,7 +279,7 @@ video {
 
 .roundnow-container {
   display: flex;
-  width: 80%;
+
 }
 
 .squarenow {
@@ -419,7 +424,7 @@ footer {
   background: #323232;
   color: #fff;
   position: relative;
-  padding: 133px 124px 154px 114px;
+  padding: 90px 120px;
 }
 
 .samyang {
@@ -513,15 +518,14 @@ footer {
 }
 
 .footer-line {
-  position: absolute;
-  bottom: 21px;
   font-size: 11px;
   border-top: 1px solid #fff;
   padding: 19px 0 0;
-  width: 1322px;
 }
 
-
+.gridcontainer {
+  padding-bottom: 50px;
+}
 
 section {
 

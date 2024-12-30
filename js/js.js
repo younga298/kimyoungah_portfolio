@@ -11,10 +11,10 @@ var swiper = new Swiper(".brandimg-text .mySwiper", {
     nextEl: ".brandimg-text .swiper-button-next",
     prevEl: ".brandimg-text .swiper-button-prev",
   },
-  // autoplay: {
-  //   delay: 4500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
 });
 
 
@@ -31,24 +31,69 @@ var swiper = new Swiper(".brandimg .mySwiper1", {
 
 //popup
 
+// $(document).ready(function () {
+
+//   // nav menu
+//   $('nav > ul > li').mouseenter(function () {
+//     $(`.sub-menu`).removeClass('active');
+
+//     const targetId = $(this).attr('data-target');
+
+//     $(`.sub-menu[data-id="${targetId}"]`).addClass('active');
+//   })
+
+//   // $('.sub-menu').mouseleave(function () {
+//   //   $(this).removeClass('active');
+//   // })
+
+
+// });
+
+//500px ~ 790px
+
 $(document).ready(function () {
+  const handleResponsiveMenu = () => {
+    if ($(window).width() <= 790) {
+      // Main menu hover
+      $('nav > ul > li').off('mouseover').on('click', function () {
+        const targetId = $(this).attr('data-target');
 
-  // nav menu
-  $('nav > ul > li').mouseenter(function () {
-    $(`.sub-menu`).removeClass('active');
+        // Show submenu and hide main menu text
+        $('.main-menu').hide(); // Main menu 숨김
+        $('.back-button').addClass('active');
+        $('.sub-menu').removeClass('active'); // 모든 submenu 비활성화
+        $(`.sub-menu[data-id="${targetId}"]`).addClass('active'); // 해당 submenu 활성화
+      });
 
-    const targetId = $(this).attr('data-target');
+      // Back button
+      $('.back-button').off('click').on('click', function () {
+        $('.sub-menu').removeClass('active'); // 모든 submenu 비활성화
+        $('.main-menu').show(); // Main menu 다시 표시
+        $('.back-button').removeClass('active');
 
-    $(`.sub-menu[data-id="${targetId}"]`).addClass('active');
-  })
+      });
+      $('.sub-menu').removeClass('active'); // 리사이즈 시 모든 서브 메뉴 비활성화
+      $('.main-menu').show(); // 메인 메뉴 다시 표시
+      $('.back-button').removeClass('active');
+    } else {
+      // Restore default behavior for larger screens
+      $('.sub-menu__group').addClass('active');
+      $('.main-menu').show();
 
-  // $('.sub-menu').mouseleave(function () {
-  //   $(this).removeClass('active');
-  // })
+      $('nav > ul > li').off('click').on('mouseover', function () {
+        const targetId = $(this).attr('data-target');
+        $('.sub-menu').removeClass('active');
+        $(`.sub-menu[data-id="${targetId}"]`).addClass('active');
+      });
+    }
+  };
 
+  // Initial setup
+  handleResponsiveMenu();
 
+  // Reapply logic on window resize
+  $(window).on('resize', handleResponsiveMenu);
 });
-
 
 //popup 닫기
 
